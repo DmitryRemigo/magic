@@ -1,0 +1,80 @@
+.preload{
+	width: 100%;
+	height: 150%;
+	background-color: rgb(14, 2, 29);
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	padding-top: 20vh;
+}
+.shap_One{
+	margin-top: 10px;
+	background-image: url('../img/shap1.png');
+	width: 200px;
+	height: 200px;
+	background-size: cover;
+	border-radius: 50%;
+	position: relative;
+}
+.shap_Two{
+	position: absolute;
+	left: 25%;
+	top: 25%;
+	background-image: url('../img/shap2.png');
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+	border-radius: 50%;
+}
+.preload_remove{
+	top: 25%;
+	left: 25%;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	border-radius: 50%;
+	transition: 500ms;
+	opacity: 0;
+	filter: blur(5px);
+}
+.preload_remove.activ{
+
+animation: glow2 1000ms both;
+}
+@keyframes glow2 {
+	from {
+background-color: white;
+opacity: 0.5;
+transform: scale(5, 5);
+	}
+
+	75% {
+		background-color: white;
+		opacity: 1;
+		transform: scale(25, 25);
+		
+	}
+	to {
+		background-color: rgb(165, 29, 219);
+		opacity: 0.5;
+		transform: scale(35, 35);
+		
+	}
+}
+
+
+.preload.activ{
+	display: none;
+}
+
+
+.preload_text{
+	position: absolute;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	margin-top: 250px;
+}
+.preload_Loading{
+	font-family: MarckScript;
+}

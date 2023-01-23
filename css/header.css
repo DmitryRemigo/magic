@@ -1,0 +1,76 @@
+
+.navbar{
+	position: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	z-index: 500;
+	width: 100%;
+	max-width: 500px;
+	height: 70px;
+	background-image: url(../img/baskc.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	transition: 400ms;
+	right: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	}
+	.navbar.active{
+			position: fixed;
+			animation-name: fadeInUp;
+			animation-duration: 400ms;
+			opacity: 0;
+			z-index: -1;
+	}
+	.burger_flals{
+		width: 50px;
+		height: 2px;
+	}
+	.conect{
+		cursor: pointer;
+		font-family: MarckScript;
+		font-size: 30px;
+		letter-spacing: 2px;
+		color:rgb(0, 0, 0);
+	}
+	span.activ {
+		animation: glow-in 2s both;
+	}
+	@keyframes glow-in {
+		from {
+			opacity: 1;
+		}
+		65% {filter: blur(3px);
+			opacity: 1;
+			text-shadow: 0 0 25px rgb(var(--colorText), var(--colorText2), var(--colorText3));
+		}
+		75% {
+			opacity: 1;color: rgb(var(--colorText), var(--colorText2), var(--colorText3));
+			
+		}
+		to {
+			opacity: 1;
+			color: rgb(0, 0, 0);
+		}
+	}
+	
+	
+	
+	@keyframes fadeInUp {
+		from {
+			opacity: 1;
+			top: 0;
+		}
+		
+		to {
+			opacity: 0;
+			top: -50px;
+		}
+		
+	}
+	
+	
+	

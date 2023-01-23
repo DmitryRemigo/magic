@@ -1,0 +1,112 @@
+.burger_menu{
+	margin-top: 70px;
+	position: absolute;
+	min-width: 80%;
+	height: 90vh;
+	background-image: url('../img/paper.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	background-position: top;
+	opacity: 0;
+	animation: burger_menu_active2 1s both;
+	display: flex;
+	justify-content: center;
+}
+.burger_menu.active{
+	animation: burger_menu_active 1s both;
+}
+@keyframes burger_menu_active {
+from {
+	opacity: 0;
+}
+65% {
+	opacity: 0;
+	
+}
+75% {
+	opacity: 0.5;
+}
+to {
+	opacity: 1;
+	
+}
+}
+@keyframes burger_menu_active2 {
+	from {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+		
+	}
+	75% {
+		opacity: 0;
+	}
+	to {
+		opacity: 0;
+		
+	}
+	}
+	
+	
+	.burger_menu_item {
+		margin-top: 25%;
+		display: flex;
+		flex-direction: column;
+		
+	}
+	.burger_menu_item span{
+		 color: rgb(0, 0, 0);
+		 font-family: MarckScript;
+		 font-size: 35px;
+		 
+	}
+	.burger_span.active{
+	animation: glow-item 2s both;
+}
+	@keyframes glow-item {
+		from {
+			opacity: 0;
+		}
+		50% {
+			opacity: 0;
+				}
+		60% {
+			opacity: 0.5;
+			color: rgb(255, 255, 255);
+			text-shadow: 0px 0px 15px white;
+			filter: blur(7px);
+		}
+		70% {
+			opacity: 1;
+			color: rgb(255, 255, 255);
+			text-shadow: 0px 0px 15px white;
+			filter: blur(3px);
+		}
+		to {
+			opacity: 1;
+			color: rgb(0, 0, 0);
+		}
+	}
+
+	.boll_burger_menu {
+		width: 100%;
+		height: 100px;
+		padding-top: 20px;
+		display: flex;
+		justify-content: center;
+	}
+	.boll_burger_item {
+		width: 100px;
+		height:100px;
+		background-image: url('../img/shap1.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position:  center;
+		border-radius: 50%;
+	}
