@@ -5,7 +5,7 @@
 	z-index: 1000;
 	display: flex;
 	justify-content: center;
-	position: relative;
+	position: static;
 	padding-top: 20vh;
 }
 .shap_One{
