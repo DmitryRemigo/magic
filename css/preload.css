@@ -36,7 +36,7 @@
 	border-radius: 50%;
 	transition: 500ms;
 	opacity: 0;
-	filter: blur(5px);
+	
 }
 .preload_remove.activ{
 
